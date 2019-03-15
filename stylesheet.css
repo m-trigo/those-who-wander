@@ -1,0 +1,56 @@
+@import url('https://themes.googleusercontent.com/fonts/css?kit=OuT6tNF0ohIDAMHhOGIbOBgekKnXlsoZzDR_hUHtwGno4xrEc13e9m2y6AAAaCd7phdtLXTSUirCR8AU6XHuMtjOux-g37ZJarMPzAi5EtI');
+
+body {
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+body,
+th,
+td {
+    font-family: 'IM Fell English';
+    font-size: 24;
+}
+
+th,
+td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64;
+    text-align: center;
+}
+
+.example {
+    font-family: 'Averia Serif Libre';
+    font-style: italic;
+}
+
+.numeric {
+    font-family: 'Almendra SC';
+}
+
+.item {
+    border: double;
+    padding: 10;
+    max-width: 400;
+}
+
+.right {
+    float: right;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 20;
+    }
+
+    h1 {
+        font-size: 48;
+    }
+}
