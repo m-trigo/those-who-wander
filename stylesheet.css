@@ -38,6 +38,7 @@ h1 {
     border: double;
     padding: 10;
     max-width: 400;
+    margin: auto;
 }
 
 .right {
@@ -52,5 +53,9 @@ h1 {
 
     h1 {
         font-size: 48;
+    }
+
+    .item {
+        max-width: 90%;
     }
 }
