@@ -6,8 +6,7 @@ const weapons = [
         "Belt": "Yes",
         "Ability": "Str",
         "Damage": 6,
-        "Traits": "Melee, Light, Throwable",
-        "Type": "Axe"
+        "Traits": "Melee, Light, Throwable"
     },
     {
         "Name": "Battle Axe",
@@ -16,8 +15,7 @@ const weapons = [
         "Belt": "Yes",
         "Ability": "Str",
         "Damage": 8,
-        "Traits": "Melee, Versatile",
-        "Type": "Axe"
+        "Traits": "Melee, Versatile"
     },
     {
         "Name": "Mace",
@@ -26,18 +24,7 @@ const weapons = [
         "Belt": "Yes",
         "Ability": "Str",
         "Damage": 6,
-        "Traits": "Melee, Impact",
-        "Type": "Blunt"
-    },
-    {
-        "Name": "Warhammer",
-        "Backpack": "-",
-        "Strap": "Yes",
-        "Belt": "-",
-        "Ability": "Str",
-        "Damage": 8,
-        "Traits": "Melee, Impact, Versatile",
-        "Type": "Blunt"
+        "Traits": "Melee, Impact, Versatile"
     },
     {
         "Name": "Dagger",
@@ -46,8 +33,7 @@ const weapons = [
         "Belt": "Yes",
         "Ability": "Str or Dex",
         "Damage": 4,
-        "Traits": "Melee, Bundle, Light, Concealable, Throwable",
-        "Type": "Blade"
+        "Traits": "Melee, Bundle, Light, Concealable, Throwable"
     },
     {
         "Name": "Shortsword",
@@ -56,8 +42,7 @@ const weapons = [
         "Belt": "Yes",
         "Ability": "Str or Dex",
         "Damage": 6,
-        "Traits": "Light",
-        "Type": "Blade"
+        "Traits": "Melee, Light"
     },
     {
         "Name": "Longsword",
@@ -66,8 +51,7 @@ const weapons = [
         "Belt": "Yes",
         "Ability": "Str",
         "Damage": 8,
-        "Traits": "Versatile",
-        "Type": "Blade"
+        "Traits": "Melee, Versatile"
     },
     {
         "Name": "Staff",
@@ -76,8 +60,7 @@ const weapons = [
         "Belt": "-",
         "Ability": "Str or Dex",
         "Damage": 4,
-        "Traits": "Diplomatic, Handy, Long, Versatile",
-        "Type": "Polearm"
+        "Traits": "Melee, Diplomatic, Handy, Long, Versatile"
     },
     {
         "Name": "Spear",
@@ -86,8 +69,7 @@ const weapons = [
         "Belt": "-",
         "Ability": "Str",
         "Damage": 6,
-        "Traits": "Handy, Long, Throwable, Versatile",
-        "Type": "Polearm"
+        "Traits": "Melee, Handy, Long, Throwable, Versatile"
     },
     {
         "Name": "Javelin",
@@ -96,8 +78,7 @@ const weapons = [
         "Belt": "-",
         "Ability": "Str",
         "Damage": 6,
-        "Traits": "Bundle, Ranged, Throwable",
-        "Type": "Ranged"
+        "Traits": "Bundle, Ranged, Throwable"
     },
     {
         "Name": "Bow",
@@ -106,8 +87,7 @@ const weapons = [
         "Belt": "-",
         "Ability": "Dex",
         "Damage": 6,
-        "Traits": "Dry, Ranged, Two-handed",
-        "Type": "Ranged"
+        "Traits": "Dry, Ranged, Two-Handed"
     },
     {
         "Name": "Crossbow",
@@ -116,8 +96,7 @@ const weapons = [
         "Belt": "-",
         "Ability": "Dex",
         "Damage": 12,
-        "Traits": "Dry, Ranged, Two-handed, Reload",
-        "Type": "Ranged"
+        "Traits": "Dry, Ranged, Two-Handed, Reload"
     },
     {
         "Name": "Shield",
@@ -126,10 +105,10 @@ const weapons = [
         "Belt": "-",
         "Ability": "Str",
         "Damage": 0,
-        "Traits": "Cover, Sunder",
-        "Type": "Shield"
+        "Traits": "Cover, Sunder"
     }
 ];
+
 
 const weaponTraits = [
     {
@@ -137,70 +116,67 @@ const weaponTraits = [
         "Effect": "Up to three can occupy the same inventory slot"
     },
     {
+        "Name": "Concealable",
+        "Effect": "Can be worn out of sight in belt slots"
+    },
+    {
+        "Name": "Cover",
+        "Effect": "Can be used as defensive cover"
+    },
+    {
         "Name": "Diplomatic",
         "Effect": "Not perceived as a weapon until used as one"
-    },
-    {
-        "Name": "Concealable",
-        "Effect": "Can be worn out of sight in the belt slots"
-    },
-    {
-        "Name": "Ranged",
-        "Effect": "Can hit from a distance"
-    },
-    {
-        "Name": "Throwable",
-        "Effect": "Can hit from a distance with one extra damage, but the weapon is unavailable until recovered"
-    },
-    {
-        "Name": "Versatile",
-        "Effect": "Can be used with two hands for one extra damage"
-    },
-    {
-        "Name": "Impact",
-        "Effect": "Ignores armored defense when dealing damage"
-    },
-    {
-        "Name": "Long",
-        "Effect": "Can reach just out of melee range"
-    },
-    {
-        "Name": "Two-handed",
-        "Effect": "Requires two hands to wield"
     },
     {
         "Name": "Dry",
         "Effect": "Malfunctions when wet"
     },
     {
-        "Name": "Light",
-        "Effect": "Can be used on the off-hand without disadvantage. If a weapon is also used on the main-hand, on a successful attack, roll damage for both weapons and keep the highest"
-    },
-    {
-        "Name": "Cover",
-        "Effect": "Can be used as defensive cover against ranged and melee attacks"
-    },
-    {
-        "Name": "Sunder",
-        "Effect": "On a failed check to prevent an attack, you can sacrifice this shield to prevent all incoming damage from the attack"
-    },
-    {
-        "Name": "Reload",
-        "Effect": "Needs time to reload after it fires"
-    },
-    {
         "Name": "Handy",
         "Effect": "Can (only) be carried by hand"
     },
     {
+        "Name": "Impact",
+        "Effect": "Ignores medium and heavy armor"
+    },
+    {
+        "Name": "Light",
+        "Effect": "Can be used off-handed without disadvantage (attacks with two weapons give advantage to the damage roll)"
+    },
+    {
+        "Name": "Long",
+        "Effect": "Can reach just out of melee range"
+    },
+    {
         "Name": "Melee",
-        "Effect": "Can only hit nearby targets, but has advantage when attacking a target without melee offensive capabilities"
+        "Effect": "Advantage if target has no melee weapon"
     },
     {
         "Name": "Ranged",
-        "Effect": "Can hit from a distance and has advantage if the target doesn't have some form of cover"
+        "Effect": "Advantage if target has no cover"
+    },
+    {
+        "Name": "Reload",
+        "Effect": "Needs time to reload after firing"
+    },
+    {
+        "Name": "Sunder",
+        "Effect": "Can be sacrificed to prevent all incoming damage from an attack"
+    },
+    {
+        "Name": "Throwable",
+        "Effect": "Can hit from a distance with one extra damage, but the weapon is unavailable until recovered"
+    },
+    {
+        "Name": "Two-Handed",
+        "Effect": "Requires two hands to wield"
+    },
+    {
+        "Name": "Versatile",
+        "Effect": "Can be used with two hands for one extra damage"
     }
-]
+];
+
 
 const WeaponToHtml = weapon => {
 
@@ -221,7 +197,7 @@ const WeaponToHtml = weapon => {
 
         trait = trait.trim();
         let description = '';
-        for(let weaponTrait of weaponTraits) {
+        for (let weaponTrait of weaponTraits) {
             if (weaponTrait.Name === trait) {
                 description = weaponTrait.Effect;
                 break;
