@@ -190,7 +190,11 @@ const WeaponToHtml = weapon => {
         }
     }
 
-    let damage = `<span class='numeric'>1</span>d<span class='numeric'>${weapon.Damage}</span>`;
+    let damage = 'No Damage';
+    if (damage) {
+        damage = `<span class='numeric'>1</span>d<span class='numeric'>${weapon.Damage}</span>`;
+    }
+
 
     let traits = '';
     weapon.Traits.split(',').forEach(trait => {
