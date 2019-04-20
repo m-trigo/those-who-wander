@@ -215,15 +215,11 @@ const WeaponToHtml = weapon => {
     <div class='item'>
         <b>${weapon.Name}</b>
         <br/>
+        <br/>On Backpack:<span class='right'>${backpack}</span>
+        <br/>On Strap:<span class='right'>${weapon.Strap}</span>
+        <br/>On Belt:<span class='right'>${weapon.Belt}</span>
         <br/>
-        On Belt:<span class='right'>${weapon.Belt}</span>
-        <br/>
-        On Strap:<span class='right'>${weapon.Strap}</span>
-        <br/>
-        On Backpack:<span class='right'>${backpack}</span>
-        <br/>
-        <br/>
-        Ability Check:<span class='right'>${weapon.Ability}</span>
+        <br/>Ability Check:<span class='right'>${weapon.Ability}</span>
         <br/>
         Damage:<span class='right'>${damage}</span>
         ${traits}
