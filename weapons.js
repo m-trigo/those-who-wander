@@ -181,10 +181,10 @@ const weaponTraits = [
 const WeaponToHtml = weapon => {
 
     let backpack = weapon.Backpack;
-    if (Number.isInteger(backpack)) {
-        if (backpack > 0) {
-            backpack = `<span class='numeric'>${backpack}</span> slot`;
-            if (backpack != 1) {
+    if (Number.isInteger(weapon.Backpack)) {
+        if (weapon.Backpack > 0) {
+            backpack = `<span class='numeric'>${weapon.Backpack}</span> slot`;
+            if (weapon.Backpack != 1) {
                 backpack += 's';
             }
         }
